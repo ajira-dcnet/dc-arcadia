@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>div { text-align:center; } div > div { border:1px solid black; margin:10px; }</style>
+    </head>
+    <body>
+        <div id="zone_infoBoxFixed"></div>
+        <script>
+            ids = [765510, 765513, 765516];
+            setTimeout(function(){
+                for (var i=0; i<ids.length; i++) {
+                    var node = document.createElement('div')
+                    node.id = "ib_modelObjectBox_Modele_meuble_76";
+                    node.innerHTML = "<p>Description ...</p>" + ids[i];
+                    document.getElementById("zone_infoBoxFixed").appendChild(node);
+                }
+            }, 200);
+        </script>
+    </body>
+</html>
